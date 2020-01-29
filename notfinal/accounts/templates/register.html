@@ -6,11 +6,30 @@
 </head>
 <body>
 <h1>Register</h1>
-<form method="POST" action="register">
+
+<!--comments by harsh !!!-->
+<!--the below form is just for testing purpose edit it as per requirement-->
+<!--and add required input fields too-->
+
+
+required fields for forms
+    -- Student Form
+        Name, Email, Phone Number
+
+
+
+<form method="POST" action="registerUser">
+    {% csrf_token %}
     <input type="text" name="username" value="">
     <input type="password" name="password" value="">
-    <input type="text" name="username" value="">
-
+    <input type="text" name="email" value="">
+    <select name="user_type">
+        <option value="" selected disabled>------Select User Type------</option>
+        <option value="PGVendor">PGVendor</option>
+        <option value="Food Vendor">Food Vendor</option>
+        <option value="Student">Student</option>
+    </select>
+    <input type="submit" value="Submit" name="Submit">
 </form>
 
 </body>
