@@ -25,22 +25,8 @@ class User(AbstractUser):
         ("Food Vendor", "Food Vendor"),
         ("Student", "Student")
     )
-    user_address = models.CharField(max_length=200)
-    user_type = models.CharField(max_length=30, choices=USER_TYPES)
-    user_phone = models.CharField(max_length=10)
-    area_id = models.ForeignKey(Area, on_delete=models.CASCADE, db_column='area_id')
+    user_address = models.CharField(max_length=200, default="")
+    user_type = models.CharField(max_length=30, choices=USER_TYPES, blank=True)
+    user_phone = models.CharField(max_length=10, blank=True)
+    area_id = models.ForeignKey(Area, on_delete=models.CASCADE, db_column='area_id', blank=True, null=True)
 
-
-
-
-
-#
-#
-# class User(models.Model):
-#     user_id = models.AutoField(primary_key=True)
-#     user_name = models.CharField(max_length=50)
-#     user_email = models.CharField(max_length=150)
-#     user_phone = models.BigIntegerField(max_length=10, min_length=10)
-#     user_address = models.V
-#
-#
