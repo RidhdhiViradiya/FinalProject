@@ -1,0 +1,45 @@
+/*Vendor Registration*/
+.iconfile{
+    margin-top:-24px;
+    padding-left:13px;
+    position: absolute;
+    color : #aaa;
+}
+input[type=text]{
+    position:relative;
+}
+.inwith input{
+    padding-left : 40px;
+}
+a{
+     text-decoration : none;
+}
+a:focus{
+    color:blue;
+}
+.sub{
+    width:30%;
+}
+.link{
+    text-align:center;
+}
+.leftside{
+    padding-top:10%;
+}
+@keyframes transitionIn{
+    from {
+        opacity : 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+.mt-4 {
+    animation: transitionIn 0.90s;
+}
+.left{
+    height:100%;
+    width:100%;
+}
