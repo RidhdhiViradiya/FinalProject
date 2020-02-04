@@ -1,0 +1,73 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <title>Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href='{% static "payingGuest/css/bootstrap.css" %}'>
+    <link rel="stylesheet" href="#">
+    <script src='{% static "" %}'></script>
+</head>
+<body>
+<div class="container-fluid mt-4  ">
+    <div class="row">
+        <div class="col-md-6"><img class="img-fluid" src="../../static/payingGuest/image/registration.png" alt="Sign-Up"> </div>
+        <div class="col-md-4 offset-1 leftside ">
+            <form>
+                <div class="container">
+                    <h3 class="text-center">Sign In</h3>
+                </div><br>
+                <div class="form-group inwith">
+                    <input id="email" name="email" type="email" class="form-control form-control-sm" placeholder="Email">
+                    <i class="fa fa-envelope iconfile" area-hidden="true"></i>
+                </div>
+                 <div class="form-group inwith">
+                    <input id="pw" name="pw" type="password" class="form-control form-control-sm" placeholder="Password">
+                    <i class="fa fa-key iconfile" area-hidden="true"></i>
+                       <a href="#" data-toggle="modal" data-target="#forgotPassword">forgot password?</a>
+                </div>
+                <div class="form-group d-flex justify-content-center">
+                     <button  type="submit" class="btn btn-primary sub" >Sign In</button>
+                </div>
+                <div class="link">
+                    <p>Don't have an account?<a href="Vregistration.html"> Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--modal for forgot password-->
+<div class="modal fade" id="forgotPassword" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background:#e6f7f6">
+        <h4 class="modal-title" style="color:blue" id="forgotPasswordLabel">Forgot Password?</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <br><p class="text-center" style="color:7394f0">No worries! Enter your email and we will send you a reset</p>
+      <div class="modal-body">
+              <form method="post" action="#" enctype="multipart/form-data">
+                       <div class="form-group inwith">
+                            <input type="email" name="resetemail" class="form-control form-control-sm " placeholder="Enter Email"/>
+                            <i class="fa fa-envelope iconfile d-flex justify-content-left" area-hidden="true"></i>
+                       </div>
+                  <div class="row">
+                      <div class="col-md-4 offset-4">
+                        <button type="button" class="btn btn-primary">Reset Password</button>
+                      </div>
+                  </div>
+                  <div class="text-center">
+                   <a href="Vlogin.html" >Back To Login</a>
+                  </div>
+             </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of a modal-->
+</body>
+</html>
