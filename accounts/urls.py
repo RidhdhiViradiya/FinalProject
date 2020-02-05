@@ -5,6 +5,6 @@ from . import views
 
 urlpatterns = [
     path('register/registerUser', views.registerUser, name="UserRegister"),
-    path('register/', views.register, name="RegisterPage"),
+    # path('register/', views.register, name="RegisterPage"),
     path('login/', views.login, name="LoginPage"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

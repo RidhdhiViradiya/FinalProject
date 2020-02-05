@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -8,12 +8,11 @@
 	<!--    <link rel="stylesheet" href='{% static "accounts/css/custom.css" %}'>-->
 	<!--    <script src='{% static "accounts/js/jquery.js" %}'></script>-->
 	<!--    <script src='{% static "accounts/js/bootstrap.js" %}'></script>-->
-	    <link rel="stylesheet" href='{% static "accounts/icons/css/all.css" %}'>
-	    <link rel="stylesheet" href='{% static "accounts/icons/css/material-icons.min.css" %}'>
+	<link rel="stylesheet" href='{% static "accounts/icons/css/all.css" %}'>
+	<link rel="stylesheet" href='{% static "accounts/icons/css/material-icons.min.css" %}'>
 	<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
 	<style>
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
@@ -269,13 +268,14 @@ footer a {
     text-decoration: none;
 }
     </style>
+
 </head>
 <body>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="#" method="post">
-			{% csrf_token %}
-			<h1>Create Account</h1>
+			{% csrf_token %}<br>
+			<h1 style="color:#a947ba">Create Account</h1><br>
 			<input type="text" placeholder="First Name" name="fnm" />
 			<input type="text" placeholder="Last Name" name="lnm"/>
 			<select name="utyp">
@@ -317,13 +317,14 @@ footer a {
 	</div>
 	<div class="form-container sign-in-container">
 		<form action="#"><br>
-			<i class="fa fa-user-circle fa-6x" style="color:green"></i>
-			<h1>Sign in</h1>
+			<i class="fa fa-user-circle fa-6x" style="color:#5ab873"></i>
+			<h1 style="color:#5ab873">Sign in</h1>
 			<br>
 			<input type="email" placeholder="Email" />
 			<input type="password" placeholder="Password" />
 			<a href="#">Forgot your password?</a>
 			<button>Sign In</button>
+			<br>
 		</form>
 	</div>
 	<div class="overlay-container">
@@ -338,6 +339,8 @@ footer a {
 				<p>Enter your personal details and start journey with us</p>
 				<button class="ghost" id="signUp">Sign Up</button>
 			</div>
+
+
 		</div>
 	</div>
 </div>

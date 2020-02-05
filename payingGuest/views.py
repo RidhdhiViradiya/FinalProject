@@ -4,6 +4,6 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'payingGuest/Vlogin.html')
+    return render(request, 'payingGuest/index.html')
 
 
